@@ -85,6 +85,7 @@ flutter:
         - asset: assets/fonts/Inter/Inter-Medium.ttf
         - asset: assets/fonts/Inter/Inter-Regular.ttf
         - asset: assets/fonts/Inter/Inter-SemiBold.ttf
+          weight: 500
         - asset: assets/fonts/Inter/Inter-Thin.ttf
   #   - family: Trajan Pro
   #     fonts:

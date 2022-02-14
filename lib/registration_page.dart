@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../form_registration.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Registration extends StatelessWidget {
@@ -7,7 +8,7 @@ class Registration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffE5E5E5),
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
         child: Column(
@@ -47,7 +48,9 @@ class Registration extends StatelessWidget {
               height: 90,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                FormRegistration(context);
+              },
               child: const Text(
                 'Create Account',
                 style: TextStyle(
@@ -68,7 +71,9 @@ class Registration extends StatelessWidget {
               height: 15,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                FormRegistration(context);
+              },
               child: const Text(
                 'Login',
                 style: TextStyle(
@@ -90,26 +95,26 @@ class Registration extends StatelessWidget {
             ),
             RichText(
               textAlign: TextAlign.center,
-              text: TextSpan(children: <TextSpan>[
-                const TextSpan(
+              text: const TextSpan(children: <TextSpan>[
+                TextSpan(
                   text: 'By logging in or registering, you have agreed to ',
                   style: TextStyle(
                     color: Color(0xff242323),
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: 'Terms and Conditions ',
                   style: TextStyle(
                     color: Color(0xff32B768),
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: 'And ',
                   style: TextStyle(
                     color: Color(0xff242323),
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: 'Privacy Policy.',
                   style: TextStyle(
                     color: Color(0xff32B768),
