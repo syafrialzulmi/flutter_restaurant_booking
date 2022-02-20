@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_restaurant_booking/backmail_page.dart';
 import 'package:flutter_restaurant_booking/changenewpassword_page.dart';
 import 'package:flutter_restaurant_booking/forgetpassword_page.dart';
+import 'package:flutter_restaurant_booking/home_page.dart';
 import 'package:flutter_restaurant_booking/onboarding_page.dart';
 import 'package:flutter_restaurant_booking/registration_page.dart';
 import 'package:flutter_restaurant_booking/success_page.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Inter',
       ),
-      home: const Onboarding(),
+      home: const HomePage(),
     );
   }
 }
