@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_restaurant_booking/slider_page.dart';
+import 'package:flutter_restaurant_booking/slider.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Onboarding extends StatefulWidget {
@@ -14,19 +14,19 @@ class _OnboardingState extends State<Onboarding> {
   PageController _controller = PageController();
 
   List<Widget> _page = [
-    const SliderPage(
+    const SliderItem(
       title: 'Nearby restaurants',
       description:
           'You don\'t have to go far to find a good restaurant,we have provided all the restaurants that is near you',
       image: 'assets/images/tracking_maps.svg',
     ),
-    const SliderPage(
+    const SliderItem(
       title: 'Select the Favorites Menu',
       description:
           'Now eat well, don\'t leave the house,You can choose your favorite food only with one click',
       image: 'assets/images/order_illustration.svg',
     ),
-    const SliderPage(
+    const SliderItem(
       title: 'Good food at a cheap price',
       description: 'You can eat at expensive restaurants with affordable price',
       image: 'assets/images/safe_food.svg',

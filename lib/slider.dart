@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class SliderPage extends StatelessWidget {
-  const SliderPage(
+class SliderItem extends StatelessWidget {
+  const SliderItem(
       {Key? key,
       required this.title,
       required this.description,
